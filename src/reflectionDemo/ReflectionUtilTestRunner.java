@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 public class ReflectionUtilTestRunner {
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
        Class<?> myClass=Class.forName("reflectionDemo.ReflectionUtil");
-       // Object reflectionUtil=myClass.newInstance();
+        Object reflectionUtil=myClass.newInstance();
 
         Method[] methods=myClass.getMethods();
         for(Method method:methods) {

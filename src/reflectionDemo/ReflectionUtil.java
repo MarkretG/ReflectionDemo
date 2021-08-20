@@ -4,9 +4,9 @@ public class ReflectionUtil {
     int rollNum;
     int regNo;
     String dep;
-    public ReflectionUtil() {
+   /* public ReflectionUtil() {
         System.out.println("default constructor");
-    }
+    }*/
     public ReflectionUtil(int rollNum) {
         this.rollNum=rollNum;
     }

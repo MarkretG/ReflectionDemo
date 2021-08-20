@@ -1,6 +1,5 @@
 package reflectionDemo;
 public class ReflectionUtil {
-
     int num;
     String name;
     float number;
@@ -30,13 +29,13 @@ public class ReflectionUtil {
     {
         System.out.println("Number:"+number);
     }
-    public  void run(String s,int number)
+    public void run(String s,int number)
     {
         System.out.println(s+" "+number);
     }
     private void close(String s)
     {
-        System.out.println("");
+        System.out.println(s);
     }
     public void  display(int number,String name,float num)
     {

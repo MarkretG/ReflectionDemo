@@ -1,44 +1,43 @@
 package reflectionDemo;
 public class ReflectionUtil {
-    int num;
     String name;
-    float number;
-    double balance;
+    int rollNum;
+    int regNo;
+    String dep;
     public ReflectionUtil() {
         System.out.println("default constructor");
     }
-    public ReflectionUtil(int num) {
-        this.num=num;
+    public ReflectionUtil(int rollNum) {
+        this.rollNum=rollNum;
     }
-    public ReflectionUtil(String name) {
+    public ReflectionUtil(String name,int rollNum) {
+        this.name=name;
+        this.rollNum=rollNum;
+    }
+    public ReflectionUtil(int regNo,String name) {
+        this.regNo=regNo;
         this.name=name;
     }
-    public ReflectionUtil(float number) {
-        this.number=number;
-    }
-    public ReflectionUtil(double balance) {
-        this.balance=balance;
+    public ReflectionUtil(String dep) {
+        this.dep=dep;
     }
 
+    public void show()
+    {
+        System.out.println("Number:"+name+" "+"Number:"+rollNum);
+    }
+    public void run()
+    {
 
-    public void display()
-    {
-        System.out.println("display success");
+        System.out.println("reg no:"+regNo+ "name:"+name);
     }
-    public void show(int number)
+
+    private void close()
     {
-        System.out.println("Number:"+number);
+        System.out.println("department:"+dep);
     }
-    public void run(String s,int number)
+    public void  display()
     {
-        System.out.println(s+" "+number);
-    }
-    private void close(String s)
-    {
-        System.out.println(s);
-    }
-    public void  display(int number,String name,float num)
-    {
-        System.out.println("Number:"+number+" "+"Name:"+name+" "+"Float value");
+        System.out.println(rollNum);
     }
 }
